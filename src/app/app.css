@@ -1,0 +1,116 @@
+div {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  justify-content: flex-start;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+p {
+  margin: 0.5rem 0;
+  color: #ffffff;
+}
+
+.check-label {
+  flex-direction: row;
+  align-items: center;
+  font-weight: normal;
+}
+
+.mensaje {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.mensaje:empty {
+  display: none;
+}
+
+.mensaje:has-text("⚠️") {
+  color: red;
+}
+
+.mensaje:has-text("✅") {
+  color: green;
+}
+
+.formulario {
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contenedor {
+  background-image: url('../assets/fondo.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,35 @@
+<div class="contenedor">
+  <h2>Formulario con Signals</h2>
+
+  <form (ngSubmit)="guardar()" class="formulario">
+    <label>
+      Nombre:
+      <input type="text" [value]="nombres()" (input)="nombres.set($any($event.target).value)" />
+    </label>
+    <br />
+
+    <label>
+      Correo:
+      <input type="email" [value]="correo()" (input)="correo.set($any($event.target).value)" />
+    </label>
+    <br />
+
+    <label>
+      Contraseña:
+      <input type="password" [value]="password()" (input)="password.set($any($event.target).value)" />
+    </label>
+    <br />
+
+    <label class="check-label">
+      <input type="checkbox" [checked]="aceptoTerminos()" (change)="aceptoTerminos.set($any($event.target).checked)" />
+      Acepto términos
+    </label>
+    <br />
+
+    <button type="button" (click)="guardar()">Guardar</button>
+  </form>
+
+  <p class="mensaje">{{ mensaje() }}</p>
+</div>
+
+<router-outlet />
